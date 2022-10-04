@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Flexible Psyche</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=5.0' >
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id ='app'>
+            <div class="nav-bar">
+                <router-link to="/">Home</router-link>
+                <router-link to="/About">About me</router-link>
+                <router-link to="/Information">Important information</router-link>
+                <router-link to="/Fees">Fees</router-link>
+                <router-link to="/Booking">Booking an appointment</router-link>
+            </div>
+            <router-view></router-view>
+    </div>
+    </body>
+
+<script src="vue.min.js"></script>
+<script src="vue-router.min.js"></script>
+
+<script src="./components/Index.js"></script>
+<script src="./components/Invalid.js"></script>
+
+<script>
+
+    const routes = [
+        { path: '/', component: Index },
+        { path: '/*', component: Invalid },
+    ];
+    
+    const router = new VueRouter({
+        //mode: 'history',
+        routes
+    })
+    
+    app = new Vue({
+        router
+    }).$mount("#app");
+    
+    </script>
