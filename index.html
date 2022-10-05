@@ -8,36 +8,29 @@
     <body>
         <div id ='app'>
             <div class="nav-bar">
-                <router-link to="/">Home</router-link>
-                <router-link to="/About">About me</router-link>
-                <router-link to="/Information">Important information</router-link>
-                <router-link to="/Fees">Fees</router-link>
-                <router-link to="/Booking">Booking an appointment</router-link>
+                <a href="#Home">Home</a>
+                <a href="#About">About me</a>
+                <a href="#Information">Important information</a>
+                <a href="#Fees">Fees</a>
+                <a href="#Booking">Booking an appointment</a>
             </div>
-            <router-view></router-view>
+            <div class="text-section" id="Home">
+                Rosalie Poesiat is a blah blah blah.<br><br>
+                More cool stuff<br><br>
+                Awesome!
+            </div>
+            <div class="text-section" id="About">
+                Some text for about goes here
+            </div>
+            <div class="text-section" id="Information">
+                Some text for important information goes here
+            </div>
+            <div class="text-section" id="Fees">
+                Some text for fees goes here
+            </div>
+            <div class="text-section" id="Booking">
+                Some text for booking goes here
+            </div>
+
     </div>
     </body>
-
-<script src="vue.min.js"></script>
-<script src="vue-router.min.js"></script>
-
-<script src="./components/Index.js"></script>
-<script src="./components/Invalid.js"></script>
-
-<script>
-
-    const routes = [
-        { path: '/', component: Index },
-        { path: '/*', component: Invalid },
-    ];
-    
-    const router = new VueRouter({
-        //mode: 'history',
-        routes
-    })
-    
-    app = new Vue({
-        router
-    }).$mount("#app");
-    
-    </script>
