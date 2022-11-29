@@ -46,6 +46,7 @@
     text-decoration: none;
     transition-duration: 0.4s;
     color: white;
+    flex: 1;
 }
 
 .nav-bar a:hover {
