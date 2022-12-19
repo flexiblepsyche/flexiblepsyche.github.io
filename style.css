@@ -8,6 +8,14 @@
     scroll-behavior: smooth;
 }
 
+ul {
+    display: inline-block;
+}
+
+li {
+    max-width: 400px;
+}
+
 #app {
     display: flex;
     flex-direction: column;
