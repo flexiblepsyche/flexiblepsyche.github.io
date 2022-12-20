@@ -10,10 +10,15 @@
 
 ul {
     display: inline-block;
+    text-align: left;
 }
 
 li {
     max-width: 400px;
+}
+
+.list {
+    text-align: center;
 }
 
 #app {
