@@ -308,6 +308,23 @@
 
         /* Mobile Styles */
         @media (max-width: 768px) {
+            .nav-container {
+                position: relative;  /* For absolute positioning of menu button */
+            }
+
+            .mobile-menu-btn {
+                display: block;
+                position: absolute;
+                right: 1rem;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            .nav-logo {
+                width: 100%;
+                text-align: center;
+            }
+
             .nav-links {
                 display: none;
                 position: absolute;
@@ -322,10 +339,6 @@
 
             .nav-links.active {
                 display: flex;
-            }
-
-            .mobile-menu-btn {
-                display: block;
             }
 
             .section-container {
