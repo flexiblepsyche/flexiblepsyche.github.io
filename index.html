@@ -36,193 +36,230 @@
             }
         </script>
         <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=5.0' >
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
         <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Lora">
     </head>
     <body>
-        <div id ='app'>
-            <div class="nav-bar">
-                <a href="#Home">Home</a>
-                <a href="#About">About me</a>
-                <a href="#Booking">Booking an appointment</a>
-                <a href="#FAQ">FAQ</a>
-                <!-- <a href="#Information">Important information</a>
-                <a href="#Fees">Fees</a> -->
-            </div>
-            <div class="page-frame" id="Home">
-                <div class="text-section">
-                <h3>Rosalie Poesiat</h3><br><br>
-                <span>Clinical Psychologist</span><br><br>
-                </span>
-                    <a href="#About" class="bounce">
-                        <svg class="arrow" xmlns="http://www.w3.org/2000/svg" height="60" viewBox="0 0 24 24" width="60"><path class="arrow" d="M7.4 8.6L12 13.2l4.6-4.6L18 10l-6 6-6-6 1.4-1.4z"/></svg>
-                    </a>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="#" class="nav-logo">Flexible Psyche</a>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="nav-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#booking">Booking</a>
+                    <a href="#faq">FAQ</a>
                 </div>
             </div>
-            <div class="page-frame" id="About">
-                <div class="text-section">
-                    <img src="assets/profile.webp" style="margin: 0 0 30px 0; max-height: 400px; object-fit: contain;">
-                    <span>
-                        As a fully registered psychologist since 2014, I have worked with people across the lifespan within hospital, community, and education settings.
-<br><br>
-                        My practice has been heavily influenced by providing sensitive interventions to those whose quality of life has been impacted by significant injury, physical trauma, or ongoing degenerative or pervasive/long term and chronic medical conditions.
-                        <br><br>
-                        I enjoy working with any person who has an interest in enhancing their quality of life, and pursuing values informed changes.
-                        <br><br>
-                        It is my belief that when we work closely to align our behaviour with what is most important to us in our lives, we can live the most meaningful life possible.
-                        <br><br>
-                        Therapeutic Approach:
-                        <br><br>
-                        <div class="list">
-                        <ul>
-                            <li>Acceptance and Commitment Therapy</li>
-                            <li>Schema Therapy</li>
-                            <li>Emotion-focussed Therapy</li>
-                            <li>Compassion-focussed Therapy</li>
-                            <li>Cognitive Behaviour Therapy</li>
-                        </ul>
-                    </div>
-                        <br><br>
-                        I believe that all people have the capacity to heal and bring meaning to their lives, despite the many hardships that they may have faced
-                        <br><br>
-                        Guiding principles and theories:
-                        <br><br>
-                        <div class="list">
-                        <ul>
-                            <li>Person-centred therapy</li>
-                            <li>Humanistic psychology</li>
-                            <li>Values-based intervention</li>
-                            <li>Trauma-informed practice</li>
-                        </ul>
-                    </div>
-<br><br>
-                        I work with clients to identify their needs and provide psychological knowledge, theory, and practices to assist them in taking the steps to enhance their quality of life.
-                        <br><br>
-                        My therapeutic focus is addressing the root causes of distress, instead of managing symptoms (which is the focus of typical CBT interventions). I utilise a range of CBT techniques, as appropriate, or where my client requests or prefers this approach, however my focus is on healing the systemic causes of suffering in a client's life.
-                </span>
+        </nav>
+    
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Rosalie Poesiat</h1>
+                <p>Clinical Psychologist</p>
+                <a href="#about" aria-label="Scroll to about section">
+                    <i class="fas fa-chevron-down fa-2x" style="color: var(--primary); animation: bounce 2s infinite;"></i>
+                </a>
+            </div>
+        </section>
+    
+        <section id="about" class="section about">
+            <div class="section-container">
+                <img src="assets/profile.webp" alt="Rosalie Poesiat" class="profile-img">
+                <div class="about-content">
+                    <p>As a fully registered psychologist since 2014, I have worked with people across the lifespan within hospital, community, and education settings.</p>
+                    <br>
+                    <p>My practice has been heavily influenced by providing sensitive interventions to those whose quality of life has been impacted by significant injury, physical trauma, or ongoing degenerative or pervasive/long term and chronic medical conditions.</p>
+                    <br>
+                    <p>I enjoy working with any person who has an interest in enhancing their quality of life, and pursuing values informed changes.</p>
+                    <br>
+                    <p>It is my belief that when we work closely to align our behaviour with what is most important to us in our lives, we can live the most meaningful life possible.</p>
+                    <br>
+                    <h3>Therapeutic Approach:</h3>
+                    <ul>
+                        <li>Acceptance and Commitment Therapy</li>
+                        <li>Schema Therapy</li>
+                        <li>Emotion-focussed Therapy</li>
+                        <li>Compassion-focussed Therapy</li>
+                        <li>Cognitive Behaviour Therapy</li>
+                    </ul>
+                    <br>
+                    <p>I believe that all people have the capacity to heal and bring meaning to their lives, despite the many hardships that they may have faced</p>
+                    <br>
+                    <h3>Guiding principles and theories:</h3>
+                    <ul>
+                        <li>Person-centred therapy</li>
+                        <li>Humanistic psychology</li>
+                        <li>Values-based intervention</li>
+                        <li>Trauma-informed practice</li>
+                    </ul>
+                    <br>
+                    <p>I work with clients to identify their needs and provide psychological knowledge, theory, and practices to assist them in taking the steps to enhance their quality of life.</p>
+                    <br>
+                    <p>My therapeutic focus is addressing the root causes of distress, instead of managing symptoms (which is the focus of typical CBT interventions). I utilise a range of CBT techniques, as appropriate, or where my client requests or prefers this approach, however my focus is on healing the systemic causes of suffering in a client's life.</p>
                 </div>
             </div>
-            <div class="page-frame" id="Booking">
+        </section>
+    
+        <section id="booking" class="section">
+            <div class="section-container">
                 <div class="notice">
-                    <!-- <span>I currently have an open waitlist. Please <a href="mailto:flexiblepsyche@gmail.com">contact me</a> directly if you would like to be added to the waitlist. Existing clients are able to book using this portal. -->
-                        <!-- <span>I am now operating a waitlist for new clients. Please <a href="mailto:flexiblepsyche@gmail.com">contact me via email</a> if you would like to be added to my waitlist. Current clients are still able to book using this portal. -->
-                        <span>I have current availability for new clients - you can book using the portal.</span><br><br>
-                        Please note, payment is deducted upon booking an appointment through this portal. Subsequent sessions can be scheduled directly with me as needed.
-                        The Medicare rebate will be accessible upon attendance of a session and with a valid mental health treatment plan.
-                    </span>
+                    <p>I have current availability for new clients - you can book using the portal.</p>
+                    <br>
+                    <p>Please note, payment is deducted upon booking an appointment through this portal. Subsequent sessions can be scheduled directly with me as needed. The Medicare rebate will be accessible upon attendance of a session and with a valid mental health treatment plan.</p>
                 </div>
-<iframe src="https://www.halaxy.com/book/widget/psychologist/ms-rosalie-poesiat/911351/983931" style="border:0;width:100vw;height:100vh;"></iframe>            </div>
-            <div class="page-frame" id="FAQ">
-                <div class="text-section">
-                    <span style="font-style: italic;">How much does a session cost?</span>
-<br><br>
-                    Session pricing is based on the recommended rate provided by the Australian Psychological Society. The current session rate is recommended to be $300 for a 40-60 minute session.
-                    <br><br>
-                    My fee from the 1st of July, 2024, will be $290 per 40-60 minute consultation, with a rebate of $137.05 (this will also increase in July). 
-                    <!-- This means that the out of pocket cost is $147.95. -->
-<br><br><br><span style="font-style: italic;">How do Medicare rebates work?</span>
-                    <br><br>
-                    In order to receive a Medicare rebate, your GP must have completed a valid Mental Health Treatment Plan. This plan must be provided prior to, or during, your first session, in order for you to receive the rebate. Medicare rebates are processed after your session. 
-<br><br>
-                    The current Medicare rebate for a session is $137.05. This is the amount that will be returned to your bank account, after your rebate is processed.
-                    <!-- The out of pocket cost of your session will be 285-136.35 = $148.65. -->
-                    <br><br>
-                    Unfortunately, I am currently unable to see the following referrals:
-                    <br><br>
+                <div class="booking-frame">
+                    <iframe src="https://www.halaxy.com/book/widget/psychologist/ms-rosalie-poesiat/911351/983931" style="border:0;width:100%;height:100vh;"></iframe>
+                </div>
+            </div>
+        </section>
+    
+        <section id="faq" class="section">
+            <div class="section-container">
+                <h2>Frequently Asked Questions</h2>
+    
+                <div class="faq-item">
+                    <h3 class="faq-question">How much does a session cost?</h3>
+                    <p>Session pricing is based on the recommended rate provided by the Australian Psychological Society. The current session rate is recommended to be $300 for a 40-60 minute session.</p>
+                    <br>
+                    <p>My fee from the 1st of July, 2024, will be $290 per 40-60 minute consultation, with a rebate of $137.05 (this will also increase in July).</p>
+                </div>
+    
+                <div class="faq-item">
+                    <h3 class="faq-question">How do Medicare rebates work?</h3>
+                    <p>In order to receive a Medicare rebate, your GP must have completed a valid Mental Health Treatment Plan. This plan must be provided prior to, or during, your first session, in order for you to receive the rebate. Medicare rebates are processed after your session.</p>
+                    <br>
+                    <p>The current Medicare rebate for a session is $137.05. This is the amount that will be returned to your bank account, after your rebate is processed.</p>
+                </div>
+    
+                <div class="faq-item">
+                    <h3 class="faq-question">Current unavailable referrals:</h3>
                     <ul>
-                    <li>NDIS clients (except for self-managed)</li>
-                    <li>DVA white card holders</li>
-                    <li>Worker's compensation clients</li>
+                        <li>NDIS clients (except for self-managed)</li>
+                        <li>DVA white card holders</li>
+                        <li>Worker's compensation clients</li>
                     </ul>
-                    <br><br>
-                    <span style="font-style: italic;">How do I make an appointment?</span>
-                    <br><br>
-                    Appointments are made through the portal above. This is my preferred method of booking, as I have limited time to book appointments outside of my direct work hours. 
-                    <br><br><br>
-                    <span style="font-style: italic;">Where is the practice located?</span>
-                <br><br>
-                    Flexible Psyche is located in the Lantern Psychology Centre, Unit 3, 6 Geils Court in Deakin. There is free and paid parking available in the streets and car park surrounding the consulting rooms. Make sure to arrive with ample time to find parking, as it can be limited during the day.
-                    <br><br><br>
-                    <span style="font-style: italic;">How is information stored?</span>
-                    <br><br>
-                    <span>I maintain client information using a digital practice management system called Halaxy. This system is encrypted
-                    and provides bank-level security of your information. Please see this <a href="https://www.lanternpsychology.com.au/privacy-policy-2/" target="_blank">privacy policy</a> for more information on
-                    how your records are stored and kept.</span>
-                    <br><br>
-                    <span style="font-style: italic;">What can I expect from my first session (and subsequent sessions)?</span>
-                    <br><br>
-                    Your first session will need to cover the legal aspects of working with a psychologist:
-                    <br><br>
+                </div>
+    
+                <div class="faq-item">
+                    <h3 class="faq-question">How do I make an appointment?</h3>
+                    <p>Appointments are made through the portal above. This is my preferred method of booking, as I have limited time to book appointments outside of my direct work hours.</p>
+                </div>
+    
+                <div class="faq-item">
+                    <h3 class="faq-question">Where is the practice located?</h3>
+                    <p>Flexible Psyche is located in the Lantern Psychology Centre, Unit 3, 6 Geils Court in Deakin. There is free and paid parking available in the streets and car park surrounding the consulting rooms. Make sure to arrive with ample time to find parking, as it can be limited during the day.</p>
+                </div>
+    
+                <div class="faq-item">
+                    <h3 class="faq-question">How is information stored?</h3>
+                    <p>I maintain client information using a digital practice management system called Halaxy. This system is encrypted and provides bank-level security of your information. Please see this <a href="https://www.lanternpsychology.com.au/privacy-policy-2/" target="_blank">privacy policy</a> for more information on how your records are stored and kept.</p>
+                </div>
+    
+                <div class="faq-item">
+                    <h3 class="faq-question">What can I expect from my first session (and subsequent sessions)?</h3>
+                    <p>Your first session will need to cover the legal aspects of working with a psychologist:</p>
                     <ul>
-                    <li>Informed consent</li>
-                    <li>Confidentiality and the limits to confidentiality, including what information will be communicated to whom (information/feedback must be provided to your GP at 6 sessions)</li>
-                    <li>How records are stored and maintained</li>
-                    <li>Voluntary participation</li>
+                        <li>Informed consent</li>
+                        <li>Confidentiality and the limits to confidentiality</li>
+                        <li>How records are stored and maintained</li>
+                        <li>Voluntary participation</li>
                     </ul>
-                    <br><br>
-                    The first session is very important as it will help us to establish the reasons for accessing psychological therapy, the goals and expectations that you may have for therapy, and which areas we can address during the course of therapy. It is important that you come to sessions with an idea of the difficulties which you most would like to work on. Keeping in mind that this is your time to explore and address the issues that are most affecting you in your life. 
-                  <br><br>
-                    Subsequent sessions will focus on the issues that you have outlined in your first session, with regard to your therapeutic goals. Sessions will involve:
-                    <br><br>
+                    <br>
+                    <p>The first session is very important as it will help us to establish the reasons for accessing psychological therapy, the goals and expectations that you may have for therapy, and which areas we can address during the course of therapy. It is important that you come to sessions with an idea of the difficulties which you most would like to work on.</p>
+                    <br>
+                    <p>Subsequent sessions will focus on the issues that you have outlined in your first session, with regard to your therapeutic goals. Sessions will involve:</p>
                     <ul>
                         <li>Discussing issues that are important to you</li>
-                        <li>Eliciting insight and understanding into difficulties and what might be causing them or contributing to them continuing</li>
+                        <li>Eliciting insight and understanding into difficulties</li>
                         <li>Learning and practicing psychological techniques</li>
-                        <li>Provision of evidence-based information that may assist in addressing your difficulties</li>
+                        <li>Provision of evidence-based information</li>
                         <li>Monitoring therapeutic progress</li>
                     </ul>
-                    <br><br>
-                    The goal of psychological therapy is not to necessarily completely remove unpleasant emotions. Rather, it is to find ways to reduce the distress and impact of psychological difficulties on your functioning in daily life. 
-                    <br><br><br>
-                    <span style="font-style: italic;">What type of services are offered?</span>
-                    <br><br>
-                    Psychological therapy is the only service offered at this time. I am not currently able to complete cognitive, personality, achievement, or psychological testing. I do not write diagnostic reports for medico legal purposes.
-                    <br><br>
-                    I am not able to offer urgent or crisis support. If you need immediate support, please consider contacting one of the following services<br><br>
-<ul>
-    <li>Lifeline Canberra: <a href="tel:131114">13 11 14</a> or <a href="http://www.lifelinecanberra.org.au" target="_blank">www.lifelinecanberra.org.au</a></li>
-    <li>Beyond Blue: <a href="tel:1300224636">1300 224 636</a> or <a href="http://www.beyondblue.org.au" target="_blank">www.beyondblue.org.au</a></li>
-    <li>Suicide Call Back Service: <a href="tel:1300659467">1300 659 467</a> or <a href="http://www.suicidecallbackservice.org.au" target="_blank">www.suicidecallbackservice.org.au</a></li>
-    <li>Specialty Phone Counselling Support: <a href="tel:1800737732">1800 737 732</a> or <a href="http://www.1800respect.org.au" target="_blank">www.1800respect.org.au</a></li>
-    <li>National Sexual Assault, Domestic Family Violence Counselling Service: <a href="tel:1300364277">1300 364 277</a></li>
-    <li>MensLine Australia: <a href="tel:1300789978">1300 789 978</a> or <a href="http://www.mensline.org.au" target="_blank">www.mensline.org.au</a></li>
-    <li>Men's Link Australia: <a href="tel:0262872226">(02) 6287 2226</a> or <a href="http://www.menslink.org.au" target="_blank">www.menslink.org.au</a></li>
-    <li>Kid's Helpline: <a href="tel:1800551800">1800 551 800</a> or <a href="http://www.kidshelpline.com.au" target="_blank">www.kidshelpline.com.au</a></li>
-    <li>Relationships Australia: <a href="tel:1300364277">1300 364 277</a> or <a href="http://www.relationships.org.au" target="_blank">www.relationships.org.au</a></li>
-    <li>Next Step: <a href="tel:0262878066">(02) 6162 6111</a> or <a href="https://mccg.org.au/services/next-step/" target="_blank">https://mccg.org.au/services/next-step/</a></li>
-    <li>Headspace Canberra: <a href="http://www.headspace.org.au" target="_blank">www.headspace.org.au</a></li>
-    <li>MindSpot: <a href="http://www.mindspot.org.au" target="_blank">www.mindspot.org.au</a></li>
-    <li>Head to Health: <a href="http://www.headtohealth.gov.au" target="_blank">www.headtohealth.gov.au</a></li>
-    <li>Black Dog Institute: <a href="http://www.blackdoginstitute.org.au" target="_blank">www.blackdoginstitute.org.au</a></li>
-    <li>ACT Mental Health Consumer Network: <a href="http://www.actmhcn.org.au" target="_blank">www.actmhcn.org.au</a></li>
-    <li>Mental Illness Education ACT: <a href="http://www.mieact.org.au" target="_blank">www.mieact.org.au</a></li>
-    <li>ACT Recovery College: <a href="http://www.recoverycollegeact.org" target="_blank">www.recoverycollegeact.org</a></li>
-    <li>Carers ACT: <a href="http://www.carersact.org.au" target="_blank">www.carersact.org.au</a></li>
-    <li>Mental Health Community Coalition: <a href="http://www.mhccact.org.au" target="_blank">www.mhccact.org.au</a></li> 
-</ul>
-
-                    <br><br><br>
-                    <span style="font-style: italic;">Session cancellations</span>
-                    <br><br>
-                    Please provide as much notice as possible prior to cancelling or rescheduling sessions. Illness is not a predictable circumstance, and it is understandable that you may need to reschedule on the same day as your appointment. Cancellations or reschedules requested less than 2 business days before the appointment may incur a cancellation fee, as I am unable to book another client into your session slot. 	 
-                    <br><br><br>
-                    <span style="font-style: italic;">Contact details</span>
-                    <br><br>
-                    <span>You can contact me via email at <a href="mailto:flexiblepsyche@gmail.com" style="display: inline;">flexiblepsyche@gmail.com</a></span>
-                    <br><br><br>
-                    <span style="font-style: italic;">Opening hours</span>
-                    <br><br>
-                    Monday 10AM-3PM<br>
-                    Tuesday 10AM-3PM<br>
-                    Wednesday 10AM-3PM<br>
-                    Friday 10AM-3PM<br>
+                </div>
+    
+                <div class="faq-item">
+                    <h3 class="faq-question">What type of services are offered?</h3>
+                    <p>Psychological therapy is the only service offered at this time. I am not currently able to complete cognitive, personality, achievement, or psychological testing. I do not write diagnostic reports for medico legal purposes.</p>
+                    <br>
+                    <p>I am not able to offer urgent or crisis support. If you need immediate support, please consider contacting one of the following services:</p>
+                    
+                    <div class="emergency-services">
+                        <ul>
+                            <li>Lifeline Canberra: <a href="tel:131114">13 11 14</a> or <a href="http://www.lifelinecanberra.org.au" target="_blank">www.lifelinecanberra.org.au</a></li>
+                            <li>Beyond Blue: <a href="tel:1300224636">1300 224 636</a> or <a href="http://www.beyondblue.org.au" target="_blank">www.beyondblue.org.au</a></li>
+                            <li>Suicide Call Back Service: <a href="tel:1300659467">1300 659 467</a></li>
+                            <li>National Sexual Assault, Domestic Family Violence Counselling Service: <a href="tel:1300364277">1300 364 277</a></li>
+                            <li>MensLine Australia: <a href="tel:1300789978">1300 789 978</a></li>
+                            <li>Kid's Helpline: <a href="tel:1800551800">1800 551 800</a></li>
+                            <li>Head to Health: <a href="http://www.headtohealth.gov.au" target="_blank">www.headtohealth.gov.au</a></li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="faq-item">
+                    <h3 class="faq-question">Session cancellations</h3>
+                    <p>Please provide as much notice as possible prior to cancelling or rescheduling sessions. Illness is not a predictable circumstance, and it is understandable that you may need to reschedule on the same day as your appointment. Cancellations or reschedules requested less than 2 business days before the appointment may incur a cancellation fee, as I am unable to book another client into your session slot.</p>
+                </div>
+    
+                <div class="faq-item">
+                    <h3 class="faq-question">Opening hours</h3>
+                    <ul>
+                        <li>Monday 10AM-3PM</li>
+                        <li>Tuesday 10AM-3PM</li>
+                        <li>Wednesday 10AM-3PM</li>
+                        <li>Friday 10AM-3PM</li>
+                    </ul>
+                </div>
+    
+                <div class="faq-item">
+                    <h3 class="faq-question">Contact details</h3>
+                    <p>You can contact me via email at <a href="mailto:flexiblepsyche@gmail.com">flexiblepsyche@gmail.com</a></p>
                 </div>
             </div>
-            <!-- <div class="page-frame" id="Fees">
-                <div class="text-section">
-                Some text for fees goes here
-                </div>
-            </div> -->
-        </div>
+        </section>
+    
+        <footer>
+            <div class="section-container">
+                <p>Flexible Psyche | Canberra Clinical Psychologist</p>
+                <p>Unit 3, 6 Geils Court, Deakin, 2600</p>
+                <p><a href="mailto:flexiblepsyche@gmail.com">flexiblepsyche@gmail.com</a></p>
+            </div>
+        </footer>
+    
+        <script>
+            // Mobile Menu Toggle
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const navLinks = document.querySelector('.nav-links');
+    
+            mobileMenuBtn.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+    
+            // Intersection Observer for animations
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+    
+            document.querySelectorAll('.section, .hero-content').forEach((element) => {
+                observer.observe(element);
+            });
+    
+            // Smooth scroll behavior for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        </script>
     </body>
